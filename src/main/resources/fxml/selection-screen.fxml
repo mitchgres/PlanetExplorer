@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Circle?>
+
+
+<!-- START OF PAGE CONTENT -->
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Rectangle?>
+<HBox alignment="CENTER"
+      xmlns:fx="http://javafx/fxml"
+      fx:controller="application_backend.structure.Selection"
+      stylesheets="@../css/screen-elements.css"
+      styleClass="background-black"
+>
+    <!-- START LEFT MOVEMENT BUTTON -->
+    <Button onAction="#handleLeftButton"
+            styleClass="arrow-left"
+    >
+    </Button>
+    <!-- END LEFT MOVEMENT BUTTON -->
+
+    <!-- START CENTRAL CONTENT BOX -->
+    <VBox styleClass="central-content-box"
+          maxHeight="875"
+    >
+            <Rectangle styleClass="separator"
+                       height="15"
+            />
+
+            <!-- PLANET IMAGE -->
+            <StackPane>
+
+                <!-- BACKGROUND FOR IMAGE -->
+                <Circle styleClass="background-circle-selection-image"
+                        radius="200"
+                >
+                </Circle>
+
+                <!-- PLANET IMAGE ACTUAL -->
+                <ImageView fx:id="planetImage"
+                           fitHeight="250"
+                           fitWidth="250"
+                           preserveRatio="true"
+                />
+            </StackPane>
+
+        <!-- VBOX TO HOLD PLANET INFORMATION -->
+        <VBox maxWidth="650" style="-fx-padding: 25px">
+            <!-- TITLE -->
+            <Label fx:id="scrTitle"
+                   styleClass="description-title-text"
+            />
+            <!-- DESCRIPTION SUBTITLE -->
+            <Label text="DESCRIPTION"
+                   styleClass="description-subtitle-text"/>
+
+            <!-- DESCRIPTION -->
+            <Label fx:id="desc"
+                   styleClass="description-body-text"
+            />
+
+            <!-- OTHER INFORMATION SUBTITLE -->
+            <Label text="OTHER INFORMATION"
+                   styleClass="description-subtitle-text"/>
+
+            <!-- OTHER INFORMATION -->
+            <Label fx:id="otherInfo"
+                   styleClass="description-body-text"
+            />
+
+            <Rectangle styleClass="separator"
+                       height="15"/>
+
+            <!-- SELECT BUTTON -->
+            <Button styleClass="selection-screen-button"
+                    text="Explore Online"
+                    onAction="#handleSelectButton"
+            />
+        </VBox>
+    </VBox>
+    <!-- END CENTRAL CONTENT BOX -->
+
+    <!-- START RIGHT MOVEMENT BUTTON -->
+    <Button onAction="#handleRightButton"
+            styleClass="arrow-right"
+    >
+    </Button>
+    <!-- END RIGHT MOVEMENT BUTTON -->
+</HBox>
+<!-- END OF PAGE CONTENT -->

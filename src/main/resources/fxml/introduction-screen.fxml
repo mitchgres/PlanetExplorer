@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.Media?>
+
+<?import javafx.scene.shape.Rectangle?>
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="application_backend.structure.Introduction"
+           stylesheets="@../css/screen-elements.css"
+           styleClass="background-black"
+>
+    <!-- START BACKGROUND VIDEO PLAYER -->
+    <MediaView styleClass="background-image-intro-screen"
+    >
+        <mediaPlayer>
+            <MediaPlayer autoPlay="true"
+                         mute="true"
+                         cycleCount="10000"
+                         rate="0.5"
+            >
+                <media>
+                    <Media source="@../videos/earth-spinning-background.mp4" />
+                </media>
+            </MediaPlayer>
+        </mediaPlayer>
+    </MediaView>
+    <!-- END BACKGROUND VIDEO PLAYER -->
+
+    <!-- START OF CONTENT -->
+    <VBox alignment="CENTER">
+        <children>
+
+            <!-- TITLE -->
+            <Label text="PLANET EXPLORER"
+                   styleClass="title-intro-screen"
+            />
+
+            <!-- SUBTITLE -->
+            <Label text="The Universe At Your Fingertips"
+                   styleClass="subtitle-intro-screen"
+            />
+
+            <!-- SEPARATOR ELEMENT -->
+            <Rectangle height="100.0" styleClass="separator"
+            />
+
+            <!-- BUTTON -->
+            <Button text="Start"
+                    fx:id="button"
+                    styleClass="button-intro-screen"
+                    onAction="#handleStartButton"
+            />
+
+        </children>
+    </VBox>
+    <!-- END OF CONTENT -->
+</StackPane>

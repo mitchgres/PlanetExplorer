@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "Acetone";
+    src: url("../fonts/ACETONE.ttf")
+    format("truetype");
+}
+
+/* START OF USED FOR INTRODUCTION SCREEN */
+.title-intro-screen {
+    /* Format Font For Title On Introduction Page */
+    -fx-font-size: 100px;
+    -fx-font-family: Acetone;
+    -fx-text-fill: #ffffff;
+}
+
+.subtitle-intro-screen {
+    /* Format Font For Subtitle On Introduction Page */
+    -fx-font-size: 50px;
+    -fx-font-family: Acetone;
+    -fx-text-fill: #808080;
+}
+
+.background-black {
+    /* Format Background For Introduction Page */
+    -fx-background-color: #000000;
+}
+
+.background-image-intro-screen {
+    /* Format Background Image For Introduction Page */
+    -fx-opacity: 0.4;
+}
+
+.button-intro-screen {
+    /* Format Button For The Select Button On The Introduction Screen */
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-width: 3px;
+    -fx-border-color: #FFFFFF;
+}
+
+.button-intro-screen:hover{
+    /* Format Button For The Select Button On The Introduction Screen If Hovered */
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #b4b4b4;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-width: 3px;
+    -fx-border-color: #b4b4b4;
+}
+
+.button-intro-screen:armed{
+    /* Format Button For The Select Button On The Introduction Screen If Clicked */
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #858585;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-width: 3px;
+    -fx-border-color: #858585;
+}
+
+.separator {
+    /* Configuration for elements whose purpose is to separate other elements. */
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-color: rgba(255, 255, 255, 0);
+}
+/* END OF USED FOR INTRO SCREEN */
+
+/* START OF USED FOR SELECTION SCREEN */
+.background-circle-selection-image {
+    -fx-background-color: #000000;
+}
+
+.description-body-text {
+    -fx-font-family: Acetone;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-alignment: "center";
+}
+
+.description-subtitle-text {
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-alignment: "center";
+    -fx-padding: 10px 10px 10px 0px;
+}
+
+.description-title-text {
+    -fx-font-family: Acetone;
+    -fx-font-size: 50px;
+    -fx-text-fill: #000000;
+    -fx-alignment: "center";
+}
+
+.central-content-box {
+    /* Attributes for the central box that contains all of the text and images on the page */
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+}
+
+.selection-screen-button {
+    /* Configures the button for selecting to learn more on the selection screen */
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #000000;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-width: 3px;
+    -fx-border-color: #000000;
+}
+
+.selection-screen-button:hover{
+    /* selection button if mouse hover over */
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #4f4f4f;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-width: 3px;
+    -fx-border-color: #4f4f4f;
+}
+
+.selection-screen-button:armed{
+    /* selection button if mouse click */
+    -fx-font-family: Acetone;
+    -fx-font-size: 25px;
+    -fx-text-fill: #797979;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-width: 3px;
+    -fx-border-color: #797979;
+}
+
+.arrow-left {
+    /* arrow pointing left */
+    -fx-min-height: 30px;
+    -fx-min-width: 30px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px 5px 5px 0px;
+    -fx-rotate: 135;
+    -fx-border-radius: 7;
+    -fx-background-color: rgba(255, 255, 255, 0);
+}
+
+.arrow-right {
+    /* arrow pointing right */
+    -fx-min-height: 30px;
+    -fx-min-width: 30px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px 5px 5px 0px;
+    -fx-rotate: -45;
+    -fx-border-radius: 7;
+    -fx-background-color: rgba(255, 255, 255, 0);
+}
+
+.arrow-right:hover {
+    -fx-border-width: 0px 7px 7px 0px;
+}
+
+.arrow-left:hover {
+    -fx-border-width: 0px 7px 7px 0px;
+}
